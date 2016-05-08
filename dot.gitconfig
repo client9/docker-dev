@@ -1,0 +1,17 @@
+#SIGSCI
+[user]
+	name = Nick Galbreath
+	email = nickg@signalsciences.com
+[push]
+  default = current
+[url "git@github.com:"]
+[branch]
+	autosetuprebase = always
+[alias]
+	dfw = diff --ignore-space-change
+[pull]
+	rebase = true
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
